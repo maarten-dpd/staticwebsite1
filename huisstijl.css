@@ -1,0 +1,408 @@
+/*opmaak voor alle elementen, zet padding en margin op 0 voor alles en bepaal font family, border-box */
+*
+{  
+    padding : 0px; 
+    margin: 0px; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    box-sizing: border-box;
+}
+/*algemene opmaak*/
+body
+{
+    height:100%; 
+    width: 100%; 
+    background-color:#FBF3F2; 
+    margin:0px; 
+    overflow-wrap:break-word;
+}
+/*hoofdingen*/
+h1, h2, h3
+{
+    text-align:center;
+}
+h1
+{
+    padding:10px; 
+    margin:5px; 
+    margin-left:0px; 
+    margin-right:0px; 
+    background-color:#FA991C;
+}
+h2
+{
+    color: #032539; 
+    padding:0px; 
+    margin-top:20px;
+}
+h3
+{color: #00008B; 
+    padding:0px; 
+    margin-top:20px;
+}
+/*scheidingslijn tussen inhoudsdelen*/
+.inhoudScheiding
+{ 
+    margin: 25px 50px 25px 50px;
+}
+/*footer en paginatittels opmaak*/
+footer, #pageTitle
+{
+    background-color: #1C768F; 
+    width: 100%; 
+    text-align: center; 
+    padding: 20px; 
+    clear:both;
+}
+footer p
+{
+    font-size:0.75em; 
+    text-align:center;
+}
+#pageTitle
+{
+    margin-top:50px;
+    color:#FBF3F2;
+}
+/*algemene paragraafopmaak voor hele pagina*/
+p
+{
+    text-align: justify;
+    text-justify: inter-word;
+}
+/*opmaak voor standaard niet uitgediepte links*/
+a:link
+{
+    text-decoration-line:underline;
+}
+a:visited
+{
+    text-decoration: none; 
+    color:#032539
+}
+a:hover
+{
+    background-color: #A7BED3;
+}
+a:active
+{
+    text-decoration-color: #A7BED3;
+}
+/*foto's in de sidebars centreren*/
+.fotoSideBar
+{
+    text-align:center;
+    padding:15px;
+}
+
+/*lijstjes in main deel opmaak*/
+.main ol, .main ul
+{
+    text-align: left; 
+    background-color:#032539;
+    list-style-position: inside;
+}
+.main ol li, .main ul li
+{
+    background-color: #FBF3F2; 
+    padding:10px;
+}
+
+.main ol
+{
+    list-style-type:upper-roman; 
+}
+.main ol ol li
+{
+    list-style-type:lower-alpha; 
+    padding-left:5px; 
+    margin-left:10px;
+}
+/*specifieke opmaak voor paragrafen en elementen onder hoofdingen in de middelste kolom (inhoud)*/
+.main p
+{
+    padding: 20px; 
+    margin: 20px;
+}
+.main .onderhoofding1
+{
+    padding-top:15px; 
+    margin:0px;
+}
+.main .onderhoofding2
+{
+    padding-top:10px; 
+    margin:0px;
+}
+.main .onderhoofding3
+{
+    padding-top:5px; 
+    margin:0px;
+}
+ol.onderhoofding2
+{
+    padding-top:0px;
+    text-align:center;
+    background-color: #FBF3F2;
+
+}
+/*tabbelen opmaak*/
+table
+{
+    width: 100%;
+}
+th
+{
+    background-color: #FA991C; 
+    height: 50px;
+}
+td
+{
+    height: auto; 
+    padding:5px;
+}
+table, th, td
+{
+    border: 1px; 
+    border-style: solid;
+}
+div
+{ 
+    border :5px; 
+    /*border-style: dotted; border-color:black;*/
+}
+#gezinscollage
+{
+    text-align:center;
+    margin-top: 25%; 
+    margin-bottom:20%
+}
+.mainInlineFotoContainer
+{
+    display:flex; 
+    justify-content: center; 
+    align-items:flex-start; 
+    margin-top:20px; 
+    margin-bottom:20px;
+}
+.mainInlineFotoContainer img
+{
+    padding:15px;
+}
+/*opmaak voor opdeling van main pagina in drie kolommen - inspiratie: cursus*/
+.container
+{ 
+    width:100%; 
+    /*border-color: tomato;*/
+    display:flex; 
+    justify-content: center;
+    align-items: flex-start;
+}
+.side 
+{float: left; 
+    width: 25%; 
+    height: 100%; 
+    padding:15px; 
+    /*border-color: yellow;*/ 
+    position:sticky;
+}
+.main 
+{float: left; 
+    width: 50%; 
+    height: 100%; 
+    padding:15px; 
+    /*border-color:blue;*/
+}
+.container:after 
+{
+    content: ""; 
+    display: table; 
+    clear: both;
+}
+/*opmaak voor competentielijst links van pagina*/
+#competenties
+{
+    padding: 50px;
+}
+
+#competentielijst
+{
+    list-style-type: none;
+}
+#competentielijst li
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color:#1C768F;
+}
+#sideLeft
+{
+    position: sticky;
+    top: 150px;
+    left:0px;
+}
+/*opmaak voor menubalk bovenaan - inspiratie W3schools*/
+nav
+{
+    width:100%;
+    background-color: #FA991C;
+    clear: both;
+    position: fixed;
+    top:0px;
+}
+nav ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FA991C;
+}
+  
+nav  li 
+{
+    float: left;
+}
+  
+nav  li a:link, nav li a:visited
+{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+nav li a.actiefMenu
+{
+    background-color:#1C768F;
+}
+/*opmaak voor navigatie iconen onderaan pagina*/
+#navIconsBottom
+{
+    padding-left: 25%;
+    padding-right: 25%;
+    display:flex;
+    justify-content: center;  
+}
+#navIconsBottom div
+{
+    display:flex;
+    flex: 10;
+    justify-content:center;
+}
+.navIcon
+{
+    padding:10px;
+}
+/*opmaak tabel in rechterpaneel*/
+#sideRight td,th
+{
+    border:0px;
+    border-spacing: 0px;
+    padding:0px;
+    margin:0px;
+}
+#sideRight
+{
+    position:sticky;
+    top:150px;
+    right:0px;
+}
+
+/*aparte opmaak index pagina want zeer verschillend van de rest van de pagina's*/
+#indexBody
+{
+    background-color: #FBF3F2;
+}
+#profielfotoIndexPagina
+{
+    position: relative;
+    text-align: center;
+    margin-top:10%;
+    margin-bottom:30px;
+}
+#pageTitleIndexPagina
+{
+    background-color : #1C768F; 
+    text-align: center; 
+    padding: 20px; 
+    font-family: sans-serif;
+    color:#FA991C;
+}
+#navigatieIndexPagina, #linkNaarHuisstijl
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.navLinkPic
+{
+    padding:15px;
+}
+a.navLinkPic:link, a.navLinkPic:visited, a.navLinkPic:hover, a.navLinkPic:active
+{
+    text-decoration-line: none;
+    background-color:transparent;
+}
+#footerIndexPagina
+{
+    position:absolute;
+    bottom:0px;
+}
+#pageTitleIndexPagina
+{
+    position: absolute;
+    top: 0px;
+    margin-top:0px;
+    width: 100%;
+}
+/*formulieren opmaak*/
+/*formulier geïnspireerd op het formulier voorbeeld van W3schools*/
+label
+{
+    display:block;
+    float:left;
+}
+input
+{
+    clear: left;
+}
+input[type=text], select, input[type=email] 
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] 
+{
+    width: 100%;
+    background-color: #1C768F;
+    color: #FBF3F2; 
+    padding: 14px 20px; 
+    margin: 8px 0; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer;
+}
+textarea 
+{ 
+    width: 100%; 
+    height: 150px; 
+    padding: 12px 20px; 
+    box-sizing: border-box; 
+    border: 2px solid #ccc; 
+    border-radius: 4px; 
+    background-color: #FBF3F2; 
+    font-size: 16px; 
+    resize: none;}
+/*verstopte email link*/
+#maillink
+{
+    visibility: hidden;
+}
+  
